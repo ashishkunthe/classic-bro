@@ -16,10 +16,25 @@ function HomePage() {
         </div>
       </header>
       <div className={styles.impactText}>
-        Discover our exclusive collection of men's accessories that add a touch
-        of elegance and style to your wardrobe. Elevate your look with our
-        finely crafted pieces that speak sophistication and class.
+        Discover Our Exclusive Collection. Explore our diverse range of
+        accessories, home furnishings, and gadgets designed for everyone. At
+        Classic Bro, we believe that style and functionality should be
+        accessible to all. Elevate your look with our thoughtfully curated
+        collection of accessories that blend elegance, sophistication, and
+        versatility. From timeless classics to modern trends, our accessories
+        express your unique personality and enhance your wardrobe. But we don’t
+        stop there! Transform your living space with our exquisite selection of
+        sofas and home decor, designed to bring comfort and style into your
+        home. Whether you’re looking for a cozy corner for relaxation or a
+        statement piece for entertaining, we’ve got you covered. And for the
+        tech enthusiasts, discover our range of controllers and gadgets that
+        enhance your gaming and entertainment experience. Embrace style,
+        comfort, and innovation with Classic Bro, where every piece is crafted
+        to make you shine.
       </div>
+      <NavLink to="shop" className={`${styles.navButton} ${styles.shopNow}`}>
+        Shop Now
+      </NavLink>
     </div>
   );
 }
