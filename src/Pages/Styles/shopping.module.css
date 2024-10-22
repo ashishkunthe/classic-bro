@@ -7,6 +7,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   overflow-y: auto; /* Allow vertical scrolling if necessary */
   max-height: 90vh; /* Adjust this to fit your design */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scrollbar-width: none; /* Firefox support */
 }
 
 .title {
@@ -39,6 +41,7 @@
 
 .navButton:hover {
   background-color: #555; /* Change color on hover */
+  color: wheat;
 }
 
 .item {

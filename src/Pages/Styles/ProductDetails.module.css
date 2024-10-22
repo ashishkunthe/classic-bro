@@ -18,16 +18,41 @@
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
-
 .backLink {
   cursor: pointer; /* Changes the cursor to pointer on hover */
-  color: #007bff; /* Bootstrap primary color or your desired color */
-  text-decoration: underline; /* Underline for a link effect */
+  color: #495057; /* Bootstrap primary color or your desired color */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold; /* Makes the link stand out */
   margin-bottom: 20px; /* Space below the back link */
+  display: inline-block; /* Ensures margins and paddings behave as expected */
+  position: relative; /* Enables absolute positioning of the pseudo element */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  align-self: flex-start; /* Aligns the link to the left inside a flex container */
+}
+
+.backLink::after {
+  content: ""; /* Adds a decorative line */
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Position it slightly below the text */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #262729; /* Same color as the link */
+  transform: scaleX(0); /* Initially invisible */
+  transition: transform 0.3s ease; /* Smooth transition */
+  transform-origin: left; /* Starts the animation from the left */
 }
 
 .backLink:hover {
-  color: #0056b3; /* Darker color on hover */
+  color: #2d2f31; /* Darker shade of blue on hover */
+}
+
+.backLink:hover::after {
+  transform: scaleX(1); /* Grows the underline from left to right */
+}
+
+.backLink:hover {
+  color: #2b2c2c; /* Darker color on hover */
 }
 
 .title {

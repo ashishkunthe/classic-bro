@@ -29,7 +29,7 @@
 .navButton {
   padding: 10px 20px; /* Add padding for buttons */
   background-color: #333; /* Button background color */
-  color: #fff; /* Button text color */
+  color: #e0dcdc; /* Button text color */
   text-decoration: none; /* Remove underline from links */
   border-radius: 5px; /* Rounded corners for buttons */
   transition: background-color 0.3s; /* Smooth transition on hover */
@@ -37,6 +37,7 @@
 
 .navButton:hover {
   background-color: #555; /* Change color on hover */
+  color: wheat;
 }
 
 .impactText {
@@ -50,13 +51,14 @@
   display: block; /* Make Shop Now a block element */
   text-align: center; /* Center align Shop Now button */
   padding: 12px 25px; /* Add padding for Shop Now button */
-  background-color: #007bff; /* Use a blue background for prominence */
-  color: #fff; /* White text */
+  background-color: #1c1e20; /* Use a blue background for prominence */
+  color: #e0d2d2; /* White text */
   border-radius: 5px; /* Rounded corners */
   text-decoration: none; /* Remove underline from link */
   transition: background-color 0.3s; /* Smooth transition on hover */
 }
 
 .shopNow:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #505153; /* Darker blue on hover */
+  color: wheat;
 }

@@ -25,7 +25,7 @@ function ProductDetails() {
     }
 
     fetchProduct();
-  }, [id]); // Re-run the effect when the id changes
+  }, [id]);
 
   return (
     <div className={styles.container}>
@@ -35,7 +35,7 @@ function ProductDetails() {
       {product ? (
         <div>
           <img
-            src={product.images[1] || product.images[0]}
+            src={product.images[1] || product.images[0] || product.images[2]}
             alt={product.title}
             className={styles.image}
           />
